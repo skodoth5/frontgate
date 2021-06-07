@@ -1,0 +1,86 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Bold;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww25780\viewh12380\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+Need eclipse with java to run this project\
+
+\f1\b Automation platform 
+\f0\b0 \'97 Used eclipse IDE and selenium WebDriver with scripts in Java.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf0 qa.ticket.testcases \'97 This package has all the below testcases\
+\
+\
+Attaching a video of the script run with the email.\
+
+\f0\b0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf0 	Testcases 1,2,3 
+\f0\b0 are in 
+\f1\b HomePageVerify.java
+\f0\b0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b \cf0 	Testcase 4 
+\f0\b0 in 
+\f1\b TicketPurchase.java\
+\
+\
+TestBase.java have the initial setup for launching chromedriver.\
+Please change the chrome driver location according to the location of your systems chrome driver.(
+\f0\b0 in
+\f1\b  config.properties file \'93
+\f0\b0 driver_path\'94)\
+\
+
+\f1\b qa.ticket.pages \'97 This package has all the classes for each webpage.
+\f0\b0 \
+\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0  other validations/verifications you feel would be beneficial and would want to add if you were automating this for real.\'97\'97\
+\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf0 {\listtext	\uc0\u8226 	}I would add screenshots for every failed test cases by adding Listeners.\
+{\listtext	\uc0\u8226 	}Negative scenarios need to be covered\
+{\listtext	\uc0\u8226 	}read input from excel\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\b \cf0 \
+Prerequisite -\
+For every run new email id is needed for Testcase 4 since create account won\'92t work with existing email.
+\f0\b0 \
+\
+Userflow to automate and test:\
+go to qatest.frontgatetickets.com\
+VERIFICATIONS (include automated test assertions):\
+
+\f1\b Testcase 1 
+\f0\b0 -  'edc test event' is displayed on page\
+
+\f1\b Testcase 2 
+\f0\b0 -  the event venue is displayed -> 'South Austin Recreation Centah (Park)'\
+
+\f1\b Testcase 3 -
+\f0\b0  report all Ticket names showing as 'SOLD OUT'\
+
+\f1\b Testcase 4 - 
+\f0\b0 select 'Select Tickets' for 'edc test event' \
+add to cart quantity 1 of Ticket 'GA pass GA'\
+select 'add to cart'\
+proceed to checkout\
+create a new account using email '<someuniquestring>@testtest.net'\
+fill out all the required checkout information \
+On Payment Information, select Credit Card (see note above about test card) \
+Decline Secure Ticket \'97 exclude step\
+Complete the purchase\
+VERIFICATION: include a test assertion that proves purchase was successful (or fails test if purchase fails)\
+}
